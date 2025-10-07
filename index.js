@@ -392,10 +392,10 @@ app.post("/create-checkout-session", async (req, res) => {
       ],
       mode: "payment",
       success_url: `${
-        process.env.FRONTEND_URL || "http://localhost:5173"
+        process.env.FRONTEND_URL || "https://elearning-frontend-8iwv.onrender.com"
       }/success?session_id={CHECKOUT_SESSION_ID}`,
       cancel_url: `${
-        process.env.FRONTEND_URL || "http://localhost:5173"
+        process.env.FRONTEND_URL || "https://elearning-frontend-8iwv.onrender.com"
       }/cancel`,
       metadata: {
         courseName,
